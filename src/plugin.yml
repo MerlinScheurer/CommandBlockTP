@@ -1,0 +1,12 @@
+name: CommandBlockTP
+version: 1.0.0
+author: Merlin M. Scheurer
+main: de.merlin.commandblocktp.Main
+
+commands:
+  cmdtp:
+    description: This creates a commandblock tp string.
+    usage: /cmdtp
+  cmdtpset:
+      description: This sets a commandblock tp string.
+      usage: /cmdtpset
