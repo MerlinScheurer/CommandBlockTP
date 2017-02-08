@@ -9,6 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;;
 public class Main extends JavaPlugin implements CommandExecutor {
     @Override
     public void onEnable(){
+        getLogger().info("Starting CommandBlockTp!");
         commandKit kit = new commandKit();
         this.getCommand("cmdtp").setExecutor(kit);
         this.getCommand("cmdtpset").setExecutor(kit);
@@ -16,7 +17,7 @@ public class Main extends JavaPlugin implements CommandExecutor {
 
     @Override
     public void onDisable(){
-
+        getLogger().info("Stopping CommandBlockTp!");
     }
 }
 

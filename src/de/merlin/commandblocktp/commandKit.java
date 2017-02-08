@@ -35,7 +35,7 @@ public class commandKit implements CommandExecutor {
             cb.setCommand(getLastCommand());
             cb.update();
             arg0.sendMessage("CBT: block updated");
-
+            return true;
         }else if(arg1.getLabel().equals("cmdtp") || arg1.getLabel().equals("/cmdtp")) {
             double x, y, z;
             Player pl = Bukkit.getPlayer(arg0.getName());
@@ -45,6 +45,7 @@ public class commandKit implements CommandExecutor {
             lastCommand = ("/tp @p " + x + " " + y + " " + z + " ");
             arg0.sendMessage(lastCommand);
             arg0.sendMessage("CBT: Command set");
+            return true;
         }
         return false;
     }
