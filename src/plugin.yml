@@ -2,6 +2,7 @@ name: CommandBlockTP
 version: 1.0.0
 author: Merlin M. Scheurer
 main: de.merlin.commandblocktp.Main
+api-version: 1.16
 
 commands:
   cmdtp:
